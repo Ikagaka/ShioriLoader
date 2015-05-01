@@ -1,17 +1,10 @@
 {
-	"name": "ikagaka.ghost.js",
-	"description": "Ikagaka Shiori Wrapper",
+	"name": "ShioriLoader",
+	"description": "Ikagaka Shiori Loader",
 	"dependencies": {
-		"encoding-japanese": "polygonplanet/encoding.js#master",
-		"nativeshiori": "",
-		"kawari.js": "",
-		"kawari7.js": "",
-		"libsatori.js": "",
-		"yaya.js": "",
-		"aya5.js": "",
-		"ikagaka.nar.js": "Ikagaka/Nar.js"
+		"browserfs": ""
 	},
-	"main": ["lib/Ghost.js"],
+	"main": ["lib/ShioriLoader.js"],
 	"ignore": [
 		"**/.*",
 		"bower_components",
@@ -19,13 +12,5 @@
 		"npm-debug.log",
 		"coverage",
 		"vendor"
-	],
-	"exportsOverride": {
-		"encoding-japanese": {
-			"js": "encoding.min.js"
-		},
-		"ikagaka.nar.js": {
-			"js": "Nar.js"
-		}
-	}
+	]
 }

@@ -46,9 +46,6 @@ ifeq ($(OS), Windows_NT)
 ISTANBUL := $(subst /,\,$(ISTANBUL))
 endif
 CODO := node_modules/.bin/codo
-ifeq ($(OS), Windows_NT)
-CODO := $(subst /,\,$(CODO))
-endif
 
 all: $(LIB_TARGET) $(BIN_TARGET)
 

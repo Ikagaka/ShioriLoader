@@ -1,0 +1,1 @@
+window.searchData = [{"t":"ShioriLoader","p":"class/ShioriLoader.html"},{"t":"src\\lib\\ShioriLoader.coffee","p":"file/src\\lib\\ShioriLoader.coffee.html"},{"t":"README.md","p":"extra/README.md.html"},{"t":"ShioriLoader.detect_shiori","p":"class/ShioriLoader.html#detect_shiori-static"},{"t":"ShioriLoader.get_shiori","p":"class/ShioriLoader.html#get_shiori-static"}]
