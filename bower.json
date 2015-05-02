@@ -2,7 +2,6 @@
 	"name": "ShioriLoader",
 	"description": "Ikagaka Shiori Loader",
 	"dependencies": {
-		"browserfs": ""
 	},
 	"main": ["lib/ShioriLoader.js"],
 	"ignore": [
