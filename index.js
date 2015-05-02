@@ -1,1 +1,1 @@
-module.exports = require('./lib/Ghost.js')
+module.exports = require('./lib/ShioriLoader.js')
