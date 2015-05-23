@@ -14,7 +14,7 @@
     
     ShioriLoader.shiories.myshiori = function(){...}; // 追加の栞クラス登録
     ShioriLoader.shiories.satori = function(){...};
-    // など栞ライブラリを読み込めば自動的に登録されている。
+    // kawariworker.jsなど栞ライブラリを読み込めば自動的に登録されている。
     
     ShioriLoader.detect_shiori().then(function(shiori){
       shiori.load(dirpath).then(...);
