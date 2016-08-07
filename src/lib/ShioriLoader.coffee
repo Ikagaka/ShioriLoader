@@ -35,5 +35,5 @@ class ShioriLoader
 
 if module?.exports?
   module.exports = ShioriLoader
-else
-  @ShioriLoader = ShioriLoader
+else if window?
+  window.ShioriLoader = ShioriLoader
