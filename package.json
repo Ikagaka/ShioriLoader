@@ -1,18 +1,20 @@
 {
-  "name":           "shioriloader",
-  "version":        "1.0.0",
-  "description":    "Ikagaka Shiori Loader",
-  "url":            "https://github.com/ikagaka/ShioriLoader",
-  "keywords":       ["ikagaka", "ukagaka"],
+  "name": "shioriloader",
+  "version": "1.0.1",
+  "description": "Ikagaka Shiori Loader",
+  "url": "https://github.com/ikagaka/ShioriLoader",
+  "keywords": [
+    "ikagaka",
+    "ukagaka"
+  ],
   "scripts": {
     "test": "mocha"
   },
   "repository": {
-    "type":         "git",
-    "url":          "https://github.com/ikagaka/ShioriLoader.git"
+    "type": "git",
+    "url": "https://github.com/ikagaka/ShioriLoader.git"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "es6-promise": "",
     "coffee-script": "",
@@ -25,8 +27,11 @@
     "codo": "",
     "mocha-phantomjs": ""
   },
-  "main":           "./index.js",
-  "author":         "Ikagaka",
-  "license":        "MIT",
-  "contributors":   ["narazaka", "legokichi"]
+  "main": "./index.js",
+  "author": "Ikagaka",
+  "license": "MIT",
+  "contributors": [
+    "narazaka",
+    "legokichi"
+  ]
 }
