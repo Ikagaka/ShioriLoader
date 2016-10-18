@@ -8,15 +8,16 @@
     <script src="shioridetector-common_names.js"></script>
     <script src="kawariworker.js"></script>
 
-    ShioriLoader.shiori_detectors.push(function(){...}); // 追加の栞判定関数登録
-    ShioriLoader.shiori_detectors.push(function(){...});
+    var ShioriLoader = shioriLoader.ShioriLoader;
+    ShioriLoader.shioriDetectors.push(function(){...}); // 追加の栞判定関数登録
+    ShioriLoader.shioriDetectors.push(function(){...});
     // shioridetector-common_names.jsなど栞判定関数ライブラリを読み込めば自動的に登録されている。
     
     ShioriLoader.shiories.myshiori = function(){...}; // 追加の栞クラス登録
     ShioriLoader.shiories.satori = function(){...};
     // kawariworker.jsなど栞ライブラリを読み込めば自動的に登録されている。
     
-    ShioriLoader.detect_shiori().then(function(shiori){
+    ShioriLoader.detectShiori().then(function(shiori){
       shiori.load(dirpath).then(...);
     }, function(error){
       throw error;
@@ -28,22 +29,22 @@
 
 栞サブシステムをロードするSingletonクラスです。
 
-### `Array<ShioriDetector>` shiori_detectors *static*
+### `Array<ShioriDetector>` shioriDetectors *static*
 
-    ShioriLoader.shiori_detectors.push(function(){...});
+    ShioriLoader.shioriDetectors.push(function(){...});
 
 栞判定関数の配列です。
 
 ### `Object<string, class Shiori>` shiories *static*
 
-    ShioriLoader.shiories.myshiori = myshiori_class;
+    ShioriLoader.shiories.myshiori = myshioriClass;
 
 栞名と栞クラスの連想配列です。
 
-### `Promise<Shiori>` detect_shiori(`FileSystemLike` fs, `string` dirpath) *static*
+### `Promise<Shiori>` detectShiori(`FileSystemLike` fs, `string` dirpath) *static*
 
     var dirpath = './ikagaka/ghost/myghost/ghost/master/';
-    ShioriLoader.detect_shiori(fs, dirpath).then(function(shiori){
+    ShioriLoader.detectShiori(fs, dirpath).then(function(shiori){
       shiori.load(dirpath).then(...);
     }, function(error){
       throw error;
@@ -60,10 +61,10 @@
 
 すべての栞判定関数が栞インスタンスを返さなければ例外を発生します。
 
-### `Promise<Shiori>` get_shiori(`FileSystemLike` fs, `string` shiori_name) *static*
+### `Promise<Shiori>` getShiori(`FileSystemLike` fs, `string` shiori_name) *static*
 
     var dirpath = './ikagaka/ghost/myghost/ghost/master/';
-    ShioriLoader.get_shiori(fs, 'kawari').then(function(shiori){
+    ShioriLoader.getShiori(fs, 'kawari').then(function(shiori){
       shiori.load(dirpath).then(...);
     }, function(error){
       throw error;
@@ -129,6 +130,10 @@ fsとdirpathの情報から栞を判定し、shioriesから該当する栞クラ
 栞が判定できなかった場合、nullを返してください。
 
 栞が判定できたがロードできなかった場合、例外を発生してください。
+
+## API Documents
+
+[API Documents](https://ikagaka.github.io/ShioriLoader)
 
 ## References
 

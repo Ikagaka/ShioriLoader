@@ -1,0 +1,4 @@
+[submodule "ShioriLoader"]
+	path = doc
+	url = https://github.com/Ikagaka/ShioriLoader.git
+	branch = gh-pages
