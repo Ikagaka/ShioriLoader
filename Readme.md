@@ -1,4 +1,4 @@
-# ShioriLoader
+# [ShioriLoader](https://github.com/Ikagaka/ShioriLoader)
 
 伺かの栞サブシステムをロードします。
 
