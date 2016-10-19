@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>shioriloader</title>
+	<title>ShioriLoader | shioriloader</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<script src="assets/js/modernizr.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">shioriloader</a>
+					<a href="../index.html" class="title">shioriloader</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -54,69 +54,158 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="globals.html">Globals</a>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="shioriloader.html">ShioriLoader</a>
 				</li>
 			</ul>
-			<h1> shioriloader</h1>
+			<h1>Class ShioriLoader</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<h1 id="shioriloader">ShioriLoader</h1>
-				<p>伺かの栞サブシステムをロードします。</p>
-				<h2 id="-">使用方法</h2>
-				<pre><code>&lt;script src=<span class="hljs-string">"ShioriLoader.js"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
-&lt;script src=<span class="hljs-string">"shioridetector-common_names.js"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
-&lt;script src=<span class="hljs-string">"kawariworker.js"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
-
-<span class="hljs-keyword">var</span> ShioriLoader = shioriLoader.ShioriLoader;
-ShioriLoader.shioriDetectors.push(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{...}); <span class="hljs-comment">// 追加の栞判定関数登録</span>
-ShioriLoader.shioriDetectors.push(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{...});
-<span class="hljs-comment">// shioridetector-common_names.jsなど栞判定関数ライブラリを読み込めば自動的に登録されている。</span>
-
-ShioriLoader.detectShiori().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">shiori</span>)</span>{
-  shiori.load(dirpath).then(...);
-}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>)</span>{
-  <span class="hljs-keyword">throw</span> error;
-});
-</code></pre><h2 id="api-">API ドキュメント</h2>
-				<p><a href="https://ikagaka.github.io/ShioriLoader">API ドキュメント</a></p>
-				<h2 id="references">References</h2>
-				<ul>
-					<li>栞判定関数 <a href="https://github.com/Ikagaka/shioridetector-common_names">shioridetector-common_names</a></li>
-					<li>栞クラス <a href="https://github.com/Narazaka/kawariworker.js">kawariworker.js</a></li>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>SHIORIサブシステムをロードするSingletonクラス</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ShioriLoader</span>
+					</li>
 				</ul>
-				<h2 id="license">License</h2>
-				<p>This is released under <a href="http://narazaka.net/license/MIT?2016">MIT License</a>.</p>
-			</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="shioriloader.html#shioridetectors" class="tsd-kind-icon">shiori<wbr>Detectors</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="shioriloader.html#detectshiori" class="tsd-kind-icon">detect<wbr>Shiori</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="shioridetectors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> shiori<wbr>Detectors</h3>
+					<div class="tsd-signature tsd-kind-icon">shiori<wbr>Detectors<span class="tsd-signature-symbol">:</span> <a href="../interfaces/shioridetector.html" class="tsd-signature-type">ShioriDetector</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Ikagaka/ShioriLoader/blob/5745b84/src/lib/shiori-loader.ts#L44">shiori-loader.ts:44</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>SHIORI判定関数の配列</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="detectshiori" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> detect<wbr>Shiori</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">detect<wbr>Shiori<span class="tsd-signature-symbol">(</span>fs<span class="tsd-signature-symbol">: </span><a href="../globals.html#filesystemlike" class="tsd-signature-type">FileSystemLike</a>, dirpath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/shiori.html" class="tsd-signature-type">Shiori</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Ikagaka/ShioriLoader/blob/5745b84/src/lib/shiori-loader.ts#L55">shiori-loader.ts:55</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>SHIORIサブシステムを判定し初期化して返す</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>{UnknownShioriError} 判定が全て失敗した場合</p>
+									</dd>
+									<dt>detail</dt>
+									<dd><p>登録された栞判定関数を順番に実行し、最初に返された栞インスタンスを返します。
+										すべての栞判定関数が栞インスタンスを返さなければ例外を発生します。</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fs: <a href="../globals.html#filesystemlike" class="tsd-signature-type">FileSystemLike</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>&#39;fs&#39; - node.js/BrowserFS のファイルシステム</p>
+									</div>
+								</li>
+								<li>
+									<h5>dirpath: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>&#39;ghost/master&#39;へのフルパス 末尾は必ずパスセパレータ(環境依存で&#39;/&#39;または&#39;\&#39;)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/shiori.html" class="tsd-signature-type">Shiori</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>SHIORIサブシステム</p>
+						</li>
+					</ul>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class">
-						<a href="classes/shioriloader.html" class="tsd-kind-icon">Shiori<wbr>Loader</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="shioriloader.html" class="tsd-kind-icon">Shiori<wbr>Loader</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="shioriloader.html#shioridetectors" class="tsd-kind-icon">shiori<wbr>Detectors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="shioriloader.html#detectshiori" class="tsd-kind-icon">detect<wbr>Shiori</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-class">
-						<a href="classes/unknownshiorierror.html" class="tsd-kind-icon">Unknown<wbr>Shiori<wbr>Error</a>
+						<a href="unknownshiorierror.html" class="tsd-kind-icon">Unknown<wbr>Shiori<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/shiori.html" class="tsd-kind-icon">Shiori</a>
+						<a href="../interfaces/shiori.html" class="tsd-kind-icon">Shiori</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/shioridetector.html" class="tsd-kind-icon">Shiori<wbr>Detector</a>
+						<a href="../interfaces/shioridetector.html" class="tsd-kind-icon">Shiori<wbr>Detector</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#filesystemlike" class="tsd-kind-icon">File<wbr>System<wbr>Like</a>
+						<a href="../globals.html#filesystemlike" class="tsd-kind-icon">File<wbr>System<wbr>Like</a>
 					</li>
 				</ul>
 			</nav>
@@ -186,7 +275,7 @@ ShioriLoader.detectShiori().then(<span class="hljs-function"><span class="hljs-k
 	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>
