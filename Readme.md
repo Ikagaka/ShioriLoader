@@ -6,7 +6,7 @@
 [![npm download by month](https://img.shields.io/npm/dm/shioriloader.svg)](https://www.npmjs.com/package/shioriloader)
 
 [![Dependency Status](https://david-dm.org/Ikagaka/ShioriLoader.svg)](https://david-dm.org/Ikagaka/ShioriLoader)
-[![devDependency Status](https://david-dm.org/Ikagaka/ShioriLoader/dev-status.svg)](https://david-dm.org/Ikagaka/ShioriLoader#info=devDependencies)
+[![devDependency Status](https://david-dm.org/Ikagaka/ShioriLoader/dev-status.svg)](https://david-dm.org/Ikagaka/ShioriLoader?type=dev)
 [![Travis Build Status](https://travis-ci.org/Ikagaka/ShioriLoader.svg)](https://travis-ci.org/Ikagaka/ShioriLoader)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/Ikagaka/ShioriLoader?svg=true)](https://ci.appveyor.com/project/Narazaka/ShioriLoader)
 [![codecov.io](https://codecov.io/github/Ikagaka/ShioriLoader/coverage.svg?branch=master)](https://codecov.io/github/Ikagaka/ShioriLoader?branch=master)
