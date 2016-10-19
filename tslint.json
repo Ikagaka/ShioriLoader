@@ -7,8 +7,7 @@
             false
         ],
         "interface-name": [
-            true,
-            "never-prefix"
+            false
         ],
         "curly": false
     }
