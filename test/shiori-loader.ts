@@ -1,21 +1,22 @@
 import 'mocha';
 import * as assert from 'power-assert';
-import {ShioriLoader} from '../src/lib/shiori-loader';
+import {ShioriLoader, Shiori, FileSystemLike} from '../src/lib/shiori-loader';
 
-class DummyShiori1 {
-	constructor(_: any) { }
+class DummyShiori implements Shiori {
+	constructor(_: FileSystemLike) { }
+	load(_: string): Promise<number> { return Promise.resolve(1); }
+	unload(): Promise<number> { return Promise.resolve(1); }
+	request(_: string): Promise<string> { return Promise.resolve(""); }
 }
-class DummyShiori2 {
-	constructor(_: any) { }
+class DummyShiori1 extends DummyShiori {
+}
+class DummyShiori2 extends DummyShiori {
 }
 
-ShioriLoader.shiories['dummy1'] = DummyShiori1;
-ShioriLoader.shiories['dummy2'] = DummyShiori2;
-
-const detector1 = (fs: any, dirpath: string, shiories: {[key: string]: any}) =>
-	dirpath === '1' ? new shiories['dummy1'](fs) : null;
-const detector2 = (fs: any, dirpath: string, shiories: {[key: string]: any}) =>
-	dirpath === '2' ? new shiories['dummy2'](fs) : null;
+const detector1 = (fs: any, dirpath: string) =>
+	dirpath === '1' ? new DummyShiori1(fs) : null;
+const detector2 = (fs: any, dirpath: string) =>
+	dirpath === '2' ? new DummyShiori2(fs) : null;
 
 ShioriLoader.shioriDetectors.push(detector1);
 ShioriLoader.shioriDetectors.push(detector2);

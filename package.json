@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dist": "webpack",
-    "doc": "rm -rf tmpdoc && typedoc --out tmpdoc src && mv doc/.git tmpdoc/.git && rm -rf doc && mv tmpdoc doc",
+    "doc": "rm -rf tmpdoc && typedoc --mode file --out tmpdoc src && mv doc/.git tmpdoc/.git && rm -rf doc && mv tmpdoc doc",
     "test": "mocha"
   },
   "dependencies": {},
