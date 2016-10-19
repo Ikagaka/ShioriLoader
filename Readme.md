@@ -16,7 +16,7 @@
 
 ## Usage
 
-```
+```html
 <script src="ShioriLoader.js"></script>
 <script src="shioridetector-common_names.js"></script>
 <script src="kawariworker.js"></script>
