@@ -32,8 +32,7 @@ export interface ShioriDetector {
    * @param fs 'fs' - node.js/BrowserFS のファイルシステム
    * @param dirpath 'ghost/master'へのフルパス 末尾は必ずパスセパレータ(環境依存で'/'または'\')
    * @return SHIORIサブシステム
-   * @detail 栞が判定できなかった場合、nullを返してください。
-             栞が判定できたがロードできなかった場合、例外を発生してください。
+   * @detail 栞が判定できなかった場合、nullを返してください。栞が判定できたがロードできなかった場合、例外を発生してください。
    */
   (fs: FileSystemLike, dirpath: string): Promise<Shiori | null> | Shiori | null;
 }
@@ -49,8 +48,7 @@ export class ShioriLoader {
    * @param dirpath 'ghost/master'へのフルパス 末尾は必ずパスセパレータ(環境依存で'/'または'\')
    * @return SHIORIサブシステム
    * @throws {UnknownShioriError} 判定が全て失敗した場合
-   * @detail 登録された栞判定関数を順番に実行し、最初に返された栞インスタンスを返します。
-   *         すべての栞判定関数が栞インスタンスを返さなければ例外を発生します。
+   * @detail 登録された栞判定関数を順番に実行し、最初に返された栞インスタンスを返します。すべての栞判定関数が栞インスタンスを返さなければ例外を発生します。
    */
   static async detectShiori(fs: FileSystemLike, dirpath: string) {
     for (const detector of ShioriLoader.shioriDetectors) {

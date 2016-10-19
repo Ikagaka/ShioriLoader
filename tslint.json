@@ -1,0 +1,15 @@
+{
+    "extends": [
+        "tslint:recommended"
+    ],
+    "rules": {
+        "member-access": [
+            false
+        ],
+        "interface-name": [
+            true,
+            "never-prefix"
+        ],
+        "curly": false
+    }
+}
