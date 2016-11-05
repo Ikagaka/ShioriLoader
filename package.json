@@ -1,6 +1,6 @@
 {
   "name": "shioriloader",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Ikagaka Shiori Loader",
   "main": "./dist/lib/shiori-loader.js",
   "types": "./dist/lib/shiori-loader.d.ts",
