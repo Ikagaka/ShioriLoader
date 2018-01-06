@@ -1,5 +1,7 @@
 # [ShioriLoader](https://github.com/Ikagaka/ShioriLoader)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Ikagaka/ShioriLoader.svg)](https://greenkeeper.io/)
+
 [![npm](https://img.shields.io/npm/v/shioriloader.svg)](https://www.npmjs.com/package/shioriloader)
 [![npm license](https://img.shields.io/npm/l/shioriloader.svg)](https://www.npmjs.com/package/shioriloader)
 [![npm download total](https://img.shields.io/npm/dt/shioriloader.svg)](https://www.npmjs.com/package/shioriloader)
