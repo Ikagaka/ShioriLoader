@@ -1,18 +1,18 @@
 # [ShioriLoader](https://github.com/Ikagaka/ShioriLoader)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Ikagaka/ShioriLoader.svg)](https://greenkeeper.io/)
-
 [![npm](https://img.shields.io/npm/v/shioriloader.svg)](https://www.npmjs.com/package/shioriloader)
 [![npm license](https://img.shields.io/npm/l/shioriloader.svg)](https://www.npmjs.com/package/shioriloader)
 [![npm download total](https://img.shields.io/npm/dt/shioriloader.svg)](https://www.npmjs.com/package/shioriloader)
 [![npm download by month](https://img.shields.io/npm/dm/shioriloader.svg)](https://www.npmjs.com/package/shioriloader)
 
-[![Dependency Status](https://david-dm.org/Ikagaka/ShioriLoader.svg)](https://david-dm.org/Ikagaka/ShioriLoader)
+[![Dependency Status](https://david-dm.org/Ikagaka/ShioriLoader/status.svg)](https://david-dm.org/Ikagaka/ShioriLoader)
 [![devDependency Status](https://david-dm.org/Ikagaka/ShioriLoader/dev-status.svg)](https://david-dm.org/Ikagaka/ShioriLoader?type=dev)
-[![Travis Build Status](https://travis-ci.org/Ikagaka/ShioriLoader.svg)](https://travis-ci.org/Ikagaka/ShioriLoader)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/Ikagaka/ShioriLoader?svg=true)](https://ci.appveyor.com/project/Narazaka/ShioriLoader)
+[![Travis Build Status](https://travis-ci.org/Ikagaka/ShioriLoader.svg?branch=master)](https://travis-ci.org/Ikagaka/ShioriLoader)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/Ikagaka/ShioriLoader?svg=true&branch=master)](https://ci.appveyor.com/project/Narazaka/ShioriLoader)
 [![codecov.io](https://codecov.io/github/Ikagaka/ShioriLoader/coverage.svg?branch=master)](https://codecov.io/github/Ikagaka/ShioriLoader?branch=master)
 [![Code Climate](https://codeclimate.com/github/Ikagaka/ShioriLoader/badges/gpa.svg)](https://codeclimate.com/github/Ikagaka/ShioriLoader)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e5dc7c833396442798f8c255580dfb27)](https://www.codacy.com/app/narazaka/ShioriLoader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Ikagaka/ShioriLoader&amp;utm_campaign=Badge_Grade)
+[![Greenkeeper badge](https://badges.greenkeeper.io/Ikagaka/ShioriLoader.svg)](https://greenkeeper.io/)
 
 伺かの栞サブシステムをロードします。
 
