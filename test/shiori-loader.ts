@@ -3,7 +3,7 @@ import * as assert from "power-assert";
 import {ShioriLoader, Shiori, FileSystemLike} from "../src/lib/shiori-loader";
 
 class DummyShiori implements Shiori {
-  constructor(_: FileSystemLike) { }
+  constructor(_: FileSystemLike) { } // tslint:disable-line no-empty
   load(_: string): Promise<number> { return Promise.resolve(1); }
   unload(): Promise<number> { return Promise.resolve(1); }
   request(_: string): Promise<string> { return Promise.resolve(""); }

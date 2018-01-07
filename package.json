@@ -12,7 +12,9 @@
     "ukagaka"
   ],
   "scripts": {
+    "prepublish": "npm run dist",
     "dist": "webpack",
+    "lint": "tslint --project .",
     "doc": "rm -rf tmpdoc && typedoc --mode file --out tmpdoc src && mv doc/.git tmpdoc/.git && rm -rf doc && mv tmpdoc doc",
     "test": "mocha"
   },

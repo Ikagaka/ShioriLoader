@@ -27,15 +27,14 @@ export interface Shiori {
 }
 
 /** SHIORI判定関数 */
-export interface ShioriDetector {
+export type ShioriDetector =
   /**
    * @param fs 'fs' - node.js/BrowserFS のファイルシステム
    * @param dirpath 'ghost/master'へのフルパス 末尾は必ずパスセパレータ(環境依存で'/'または'\')
    * @return SHIORIサブシステム
    * @detail 栞が判定できなかった場合、nullを返してください。栞が判定できたがロードできなかった場合、例外を発生してください。
    */
-  (fs: FileSystemLike, dirpath: string): Promise<Shiori | null> | Shiori | null;
-}
+  (fs: FileSystemLike, dirpath: string) => Promise<Shiori | null> | Shiori | null;
 
 /** SHIORIサブシステムをロードするSingletonクラス */
 export class ShioriLoader {
@@ -59,4 +58,5 @@ export class ShioriLoader {
   }
 }
 
+// tslint:disable-next-line max-classes-per-file
 export class UnknownShioriError extends Error { }
