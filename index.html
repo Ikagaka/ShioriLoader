@@ -7,7 +7,6 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<script src="assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -41,8 +40,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -70,15 +67,17 @@
 					<a href="https://www.npmjs.com/package/shioriloader"><img src="https://img.shields.io/npm/l/shioriloader.svg" alt="npm license"></a>
 					<a href="https://www.npmjs.com/package/shioriloader"><img src="https://img.shields.io/npm/dt/shioriloader.svg" alt="npm download total"></a>
 				<a href="https://www.npmjs.com/package/shioriloader"><img src="https://img.shields.io/npm/dm/shioriloader.svg" alt="npm download by month"></a></p>
-				<p><a href="https://david-dm.org/Ikagaka/ShioriLoader"><img src="https://david-dm.org/Ikagaka/ShioriLoader.svg" alt="Dependency Status"></a>
-					<a href="https://david-dm.org/Ikagaka/ShioriLoader#info=devDependencies"><img src="https://david-dm.org/Ikagaka/ShioriLoader/dev-status.svg" alt="devDependency Status"></a>
-					<a href="https://travis-ci.org/Ikagaka/ShioriLoader"><img src="https://travis-ci.org/Ikagaka/ShioriLoader.svg" alt="Travis Build Status"></a>
-					<a href="https://ci.appveyor.com/project/Narazaka/ShioriLoader"><img src="https://ci.appveyor.com/api/projects/status/github/Ikagaka/ShioriLoader?svg=true" alt="AppVeyor Build Status"></a>
+				<p><a href="https://david-dm.org/Ikagaka/ShioriLoader"><img src="https://david-dm.org/Ikagaka/ShioriLoader/status.svg" alt="Dependency Status"></a>
+					<a href="https://david-dm.org/Ikagaka/ShioriLoader?type=dev"><img src="https://david-dm.org/Ikagaka/ShioriLoader/dev-status.svg" alt="devDependency Status"></a>
+					<a href="https://travis-ci.org/Ikagaka/ShioriLoader"><img src="https://travis-ci.org/Ikagaka/ShioriLoader.svg?branch=master" alt="Travis Build Status"></a>
+					<a href="https://ci.appveyor.com/project/Narazaka/ShioriLoader"><img src="https://ci.appveyor.com/api/projects/status/github/Ikagaka/ShioriLoader?svg=true&amp;branch=master" alt="AppVeyor Build Status"></a>
 					<a href="https://codecov.io/github/Ikagaka/ShioriLoader?branch=master"><img src="https://codecov.io/github/Ikagaka/ShioriLoader/coverage.svg?branch=master" alt="codecov.io"></a>
-				<a href="https://codeclimate.com/github/Ikagaka/ShioriLoader"><img src="https://codeclimate.com/github/Ikagaka/ShioriLoader/badges/gpa.svg" alt="Code Climate"></a></p>
+					<a href="https://codeclimate.com/github/Ikagaka/ShioriLoader"><img src="https://codeclimate.com/github/Ikagaka/ShioriLoader/badges/gpa.svg" alt="Code Climate"></a>
+					<a href="https://www.codacy.com/app/narazaka/ShioriLoader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Ikagaka/ShioriLoader&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/e5dc7c833396442798f8c255580dfb27" alt="Codacy Badge"></a>
+				<a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/Ikagaka/ShioriLoader.svg" alt="Greenkeeper badge"></a></p>
 				<p>伺かの栞サブシステムをロードします。</p>
 				<h2 id="usage">Usage</h2>
-				<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"ShioriLoader.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+				<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"ShioriLoader.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"shioridetector-common_names.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"kawariworker.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
@@ -94,7 +93,8 @@ ShioriLoader.detectShiori().then(<span class="hljs-function"><span class="hljs-k
   <span class="hljs-keyword">throw</span> error;
 });
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre><h2 id="api-documents">API Documents</h2>
+</code></pre>
+				<h2 id="api-documents">API Documents</h2>
 				<p><a href="https://ikagaka.github.io/ShioriLoader">API Documents</a></p>
 				<h2 id="references">References</h2>
 				<ul>
@@ -124,11 +124,11 @@ ShioriLoader.detectShiori().then(<span class="hljs-function"><span class="hljs-k
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/shiori.html" class="tsd-kind-icon">Shiori</a>
 					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/shioridetector.html" class="tsd-kind-icon">Shiori<wbr>Detector</a>
-					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#filesystemlike" class="tsd-kind-icon">File<wbr>System<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#shioridetector" class="tsd-kind-icon">Shiori<wbr>Detector</a>
 					</li>
 				</ul>
 			</nav>
@@ -195,7 +195,7 @@ ShioriLoader.detectShiori().then(<span class="hljs-function"><span class="hljs-k
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>

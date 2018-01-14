@@ -7,7 +7,6 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<script src="assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -41,8 +40,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -79,13 +76,13 @@
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface"><a href="interfaces/shiori.html" class="tsd-kind-icon">Shiori</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/shioridetector.html" class="tsd-kind-icon">Shiori<wbr>Detector</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias"><a href="globals.html#filesystemlike" class="tsd-kind-icon">File<wbr>System<wbr>Like</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#shioridetector" class="tsd-kind-icon">Shiori<wbr>Detector</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,13 +96,75 @@
 					<div class="tsd-signature tsd-kind-icon">File<wbr>System<wbr>Like<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Ikagaka/ShioriLoader/blob/2661c13/src/lib/shiori-loader.ts#L4">shiori-loader.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/Ikagaka/ShioriLoader/blob/291cf5b/lib/shiori-loader.ts#L4">shiori-loader.ts:4</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>&#39;fs&#39; - node.js/BrowserFS のファイルシステム</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="shioridetector" class="tsd-anchor"></a>
+					<h3>Shiori<wbr>Detector</h3>
+					<div class="tsd-signature tsd-kind-icon">Shiori<wbr>Detector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Ikagaka/ShioriLoader/blob/291cf5b/lib/shiori-loader.ts#L30">shiori-loader.ts:30</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>SHIORI判定関数</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>fs<span class="tsd-signature-symbol">: </span><a href="globals.html#filesystemlike" class="tsd-signature-type">FileSystemLike</a>, dirpath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/shiori.html" class="tsd-signature-type">Shiori</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="interfaces/shiori.html" class="tsd-signature-type">Shiori</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<div class="tsd-comment tsd-typography">
+											<dl class="tsd-comment-tags">
+												<dt>detail</dt>
+												<dd><p>栞が判定できなかった場合、nullを返してください。栞が判定できたがロードできなかった場合、例外を発生してください。</p>
+												</dd>
+											</dl>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>fs: <a href="globals.html#filesystemlike" class="tsd-signature-type">FileSystemLike</a></h5>
+												<div class="tsd-comment tsd-typography">
+													<div class="lead">
+														<p>&#39;fs&#39; - node.js/BrowserFS のファイルシステム</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<h5>dirpath: <span class="tsd-signature-type">string</span></h5>
+												<div class="tsd-comment tsd-typography">
+													<div class="lead">
+														<p>&#39;ghost/master&#39;へのフルパス 末尾は必ずパスセパレータ(環境依存で&#39;/&#39;または&#39;\&#39;)</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/shiori.html" class="tsd-signature-type">Shiori</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<a href="interfaces/shiori.html" class="tsd-signature-type">Shiori</a>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">null</span>
+										</h4>
+										<p>SHIORIサブシステム</p>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -129,11 +188,11 @@
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/shiori.html" class="tsd-kind-icon">Shiori</a>
 					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/shioridetector.html" class="tsd-kind-icon">Shiori<wbr>Detector</a>
-					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#filesystemlike" class="tsd-kind-icon">File<wbr>System<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#shioridetector" class="tsd-kind-icon">Shiori<wbr>Detector</a>
 					</li>
 				</ul>
 			</nav>
@@ -200,7 +259,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
