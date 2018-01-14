@@ -4,20 +4,21 @@
         "module": "commonjs",
         "target": "es2015",
         "declaration": true,
+        "forceConsistentCasingInFileNames": true,
         "noImplicitAny": true,
         "noImplicitThis": true,
         "noImplicitReturns": true,
         "noImplicitUseStrict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
+        "sourceRoot": ".",
         "strictNullChecks": true,
         "outDir": "dist",
         "lib": [
-            "es5",
-            "es2015.promise"
+            "dom",
+            "es2015"
         ]
     },
     "exclude": [
