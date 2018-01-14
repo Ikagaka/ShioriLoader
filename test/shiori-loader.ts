@@ -1,6 +1,7 @@
+// tslint:disable max-classes-per-file
 import "mocha";
 import * as assert from "power-assert";
-import {ShioriLoader, Shiori, FileSystemLike} from "../src/lib/shiori-loader";
+import {FileSystemLike, Shiori, ShioriLoader} from "../lib/shiori-loader";
 
 class DummyShiori implements Shiori {
   constructor(_: FileSystemLike) { } // tslint:disable-line no-empty
@@ -25,19 +26,19 @@ describe("ShioriLoader", () => {
   it("shiori1", () =>
     ShioriLoader.detectShiori({}, "1").then(
       (shiori) => assert(shiori instanceof DummyShiori1),
-      () => { throw new Error(); }
-    )
+      () => { throw new Error(); },
+    ),
   );
   it("shiori2", () =>
     ShioriLoader.detectShiori({}, "2").then(
       (shiori) => assert(shiori instanceof DummyShiori2),
-      () => { throw new Error(); }
-    )
+      () => { throw new Error(); },
+    ),
   );
   it("no shiori", () =>
     ShioriLoader.detectShiori({}, "no").then(
       () => { throw new Error(); },
-      () => assert.ok(true)
-    )
+      () => assert.ok(true),
+    ),
   );
 });

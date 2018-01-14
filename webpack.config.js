@@ -1,37 +1,31 @@
-const webpack = require('webpack');
-const tsconfig = require('./tsconfig.json');
-const path = require('path');
+const path = require("path");
+const tsconfig = require("./tsconfig.json");
+
+tsconfig.compilerOptions.target = "es5";
 
 module.exports = {
+  entry: {"shiori-loader": "./lib/shiori-loader.ts"},
+  output: {
+    library: "shioriLoader",
+    libraryTarget: "umd",
+    path: path.resolve("."),
+    filename: "dist/lib/[name].js",
+  },
   module: {
     rules: [
       {
         test: /\.ts$/,
-        use: [
-          'babel-loader',
-          {
-            loader: 'ts-loader',
-            options: {compilerOptions: tsconfig.compilerOptions},
-          },
-        ],
+        loader: "ts-loader",
         exclude: /node_modules/,
+        options: {compilerOptions: tsconfig.compilerOptions},
       },
     ],
   },
-  entry: {
-    'shiori-loader': './src/lib/shiori-loader.ts',
-  },
-  output: {
-    path: path.join(__dirname),
-    filename: 'dist/lib/[name].js',
-    library: 'shioriLoader',
-    libraryTarget: 'umd',
-  },
-  plugins: [
-    new webpack.optimize.AggressiveMergingPlugin(),
-  ],
-  devtool: 'source-map',
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: [
+      ".ts",
+      ".js",
+    ],
   },
+  devtool: "source-map",
 };

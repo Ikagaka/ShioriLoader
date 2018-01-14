@@ -1,4 +1,4 @@
--R spec
+--require espower-typescript/guess
 --ui bdd
---require ts-node/register
+--recursive
 test/*.ts

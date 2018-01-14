@@ -14,11 +14,14 @@
         "preserveConstEnums": true,
         "sourceMap": true,
         "strictNullChecks": true,
-        "outDir": "dist/lib"
+        "outDir": "dist",
+        "lib": [
+            "es5",
+            "es2015.promise"
+        ]
     },
     "exclude": [
         "node_modules",
-        "dist",
-        "test"
+        "dist"
     ]
 }
